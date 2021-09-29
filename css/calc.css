@@ -1,0 +1,40 @@
+#visor {
+   background-color: #F0E68C	;
+   text-align: right;
+}
+
+table {
+   margin: 0 auto 0 auto;
+   background-color: #808080;
+}
+
+form fieldset {
+   margin: 10px auto 10px auto;
+   width: 40%;
+   border: solid black 1px;
+   padding: 3%;
+   margin-bottom: 10px;
+   background-color: #808080;
+}
+
+form input {
+   width: 100%;
+   border: solid #ccc 1px;
+   font-size: 100px;
+   margin-bottom: 10px;
+}
+
+form input.num {
+   display: block;
+   width: 150px;
+   height: 150px;
+   background-color: #363636	;
+   color: white;
+}
+
+form input.oper {
+   display: block;
+   width: 150px;
+   height: 150px;
+   background-color: #b2b2b2;
+}

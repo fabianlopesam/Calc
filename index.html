@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+		  <link rel="stylesheet" href="css\reset.css">
+		  <link rel="stylesheet" href="css\calc.css">
+</head>
+<body>
+
+<form name="tela" method="post" action="">
+   <fieldset>
+
+      <input type="text" name="visor" id="visor" readonly />
+
+      <table id="botoes">
+         <tr>
+            <td><input type="button" name="numero9" class="num" value="9" onclick="concatena(9)" /></td>
+            <td><input type="button" name="numero8" class="num" value="8" onclick="concatena(8)" /></td>
+            <td><input type="button" name="numero7" class="num" value="7" onclick="concatena(7)" /></td>
+            <td><input type="button" name="somar"   class="oper" value="+" onclick="concatena('+')" /></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="numero6"  class="num" value="6" onclick="concatena(6)" /></td>
+            <td><input type="button" name="numero5"  class="num" value="5" onclick="concatena(5)" /></td>
+            <td><input type="button" name="numero4"  class="num" value="4" onclick="concatena(4)" /></td>
+            <td><input type="button" name="subtrair" class="oper" value="-" onclick="concatena('-')" /></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="numero3"     class="num" value="3" onclick="concatena(3)" /></td>
+            <td><input type="button" name="numero2"     class="num" value="2" onclick="concatena(2)" /></td>
+            <td><input type="button" name="numero1"     class="num" value="1" onclick="concatena(1)" /></td>
+            <td><input type="button" name="multiplicar" class="oper" value="*" onclick="concatena('*')" /></td>
+         </tr>
+         <tr>
+            <td><input type="button" name="numero0" class="num" value="0" onclick="concatena(0)" /></td>
+            <td><input type="button" name="resultado" class="num" value="=" onclick="calcula(document.tela.visor.value)" /></td>
+            <td><input type="button" name="limpar" class="num" value="AC" onclick="limpa()" /></td>
+            <td><input type="button" name="dividir" class="oper" value="/" onclick="concatena('/')" /></td>
+         </tr>
+      </table>
+   </fieldset>
+</form>
+
+<script src="js\calcexp.js" ></script>
+
+</body>
+</html>
